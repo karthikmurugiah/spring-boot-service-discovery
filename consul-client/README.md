@@ -5,13 +5,13 @@ Applications can query consul for the instance information and call the appropri
 
 Steps to run this service:
 1. Run consul agent
-path/to/consul>consul agent -dev
+* path/to/consul>consul agent -dev
 
 2. Run this client service
-java -jar <path/name of the jar>
+* java -jar <path/name of the jar>
 
 3. Open consul UI to check if the client service is registered
-http://<hostname>:8500/
+http://localhost:8500/
 
 4. Use the discovery service to list the instance information
-http://<hostname>:8080/discoveryClient/consul-client
+http://localhost:8080/discoveryClient/consul-client
